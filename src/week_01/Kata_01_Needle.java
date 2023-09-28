@@ -18,4 +18,9 @@ public class Kata_01_Needle {
         }
         return "there is no needle";
     }
+
+    public static String findNeedle1(Object[] haystack) {
+        int indexOf = Arrays.asList(haystack).indexOf("needle");
+        return "found needle at position " + indexOf;
+    }
 }
