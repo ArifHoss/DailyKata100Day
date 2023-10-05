@@ -1,10 +1,6 @@
 package week_02;
 
 public class Kata_01_ValidatePinCode {
-    public static void main(String[] args) {
-        System.out.println(validatePin2("1243"));
-    }
-
 
     public static boolean validatePin2(String pin) {
         return pin.matches("[0-9]{4}|[0-9]{6}");
