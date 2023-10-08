@@ -6,6 +6,7 @@ public class Kata_04_PlayingWithDigits {
         System.out.println(digPow(92, 1));    // -1
         System.out.println(digPow(695, 2));   // 2
         System.out.println(digPow(46288, 3)); // 51
+
     }
     public static long digPow(int n, int p) {
         char[] digits = Integer.toString(n).toCharArray();
@@ -24,6 +25,7 @@ public class Kata_04_PlayingWithDigits {
             return -1;
         }
     }
+
 }
 
 /*
