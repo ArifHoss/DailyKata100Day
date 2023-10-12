@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class Kata_03_TwoSumInputArrayIsSorted {
     public static void main(String[] args) {
-        int[] numbers = {2,3,4};
+        int[] numbers = {2, 3, 4};
         System.out.println(Arrays.toString(twoSum(numbers, 5)));
         System.out.println(Arrays.toString(twoSum1(numbers, 5)));
     }
@@ -18,9 +18,9 @@ public class Kata_03_TwoSumInputArrayIsSorted {
         for (int i = 0; i < numbers.length; i++) {
             int complement = target - numbers[i];
             if (map.containsKey(complement)) {
-                return new int[]{map.get(complement), i+1};
+                return new int[]{map.get(complement), i + 1};
             }
-            map.put(numbers[i], i+1);
+            map.put(numbers[i], i + 1);
         }
         throw new IllegalArgumentException("THERE_ARE_NO_TWO_SUM_SOLUTION");
     }
