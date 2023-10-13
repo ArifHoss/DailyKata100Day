@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class LineNumbering {
+public class Kata_01_LineNumbering {
     public static void main(String[] args) {
         List<String> list = Arrays.asList("a", "b", "c");
         System.out.println(numbering(list));
