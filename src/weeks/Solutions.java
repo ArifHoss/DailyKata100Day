@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 public class Solutions {
     public static void main(String[] args) {
+        //kata 21
+        System.out.println(validateUser("asssssssssssss1_"));
         //kata 20
         int[] numbers = {10, 14, 2, 23, 19};
         int sum = sumOfLargestPair(numbers);
@@ -24,6 +26,16 @@ public class Solutions {
         //System.out.println(sumOfMultiplesBelowLimit(4, -7));
 
     }
+    // thu 19 oct 2023 Kata21
+
+    /**
+     * Simple validation of a username with regex
+     */
+    public static boolean validateUser(String username) {
+        //if (username.length() <= 4 || username.length() >= 16) return false;
+        return username.matches("^[a-z0-9_]{4,16}$");
+    }
+
     //wed 18 oct 2023 Kata20
 
     /**
